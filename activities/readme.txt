@@ -1,7 +1,7 @@
 This is my Activities Folder :)
 It cosnsist of the ff
 
-A1 Flow Charts & Psuedocodes Researc
+A1 Flow Charts & Psuedocodes Research
 A2 Flow-charting Exercise (M1 & M2)
 A3 Pseudo-code Exercises
 A4 Flowgorithm Exercises Discussion
