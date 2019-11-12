@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-12 10:05:58 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLVNJUFRQSTI7MjAxOS0xMC0yOTswOTo1OTo1NyBBTTsyNzk3"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVNJUFRQSTI7MjAxOS0xMS0wNTsxMToxMDoyNiBBTTsyOzI4Nzc="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTk7MjAxOS0xMS0xMjsxMDowNTo1OCBBTTsxOzIzMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to my Program&quot;" newline="True"/>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="answer" type="Integer" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <while expression="ExitCode == True">
+                <output expression="&quot;Please input the first number&quot;" newline="True"/>
+                <input variable="num1"/>
+                <output expression="&quot;Now input the second number&quot;" newline="True"/>
+                <input variable="num2"/>
+                <assign variable="answer" expression="num1 + num2"/>
+                <output expression="&quot;the answer is &quot; &amp; answer" newline="True"/>
+                <output expression="&quot;Would you like try again?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="again ==&quot;Yes&quot;">
+                    <then>
+                        <output expression="&quot;Lets do this Again!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Have a Nice Day!&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

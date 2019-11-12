@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-05 11:07:11 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLVNSRUdKNTE7MjAxOS0xMC0yNTsxMDoxODo0OSBBTTsyNzM5"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVNSRUdKNTE7MjAxOS0xMC0yNTsxMDozNDoxMiBBTTsxOzI4MzU="/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVNWOTNQSE07MjAxOS0xMC0yOTsxMDo0OToyMCBBTTs1OzI4NzM="/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLVNJUFRQSTI7MjAxOS0xMS0wNTsxMTowNzoxMSBBTTszOzI4Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot; Welcome to my Program of Identifying if a number is an ODD or Even &quot;" newline="True"/>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <declare name="oddoreven" type="Integer" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <while expression="ExitCode == True">
+                <output expression="&quot;Please enter a number&quot;" newline="True"/>
+                <input variable="Number"/>
+                <assign variable="oddoreven" expression="Number %  2"/>
+                <if expression="oddoreven == 0">
+                    <then>
+                        <output expression="number &amp; &quot; is even&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="number &amp; &quot; is odd&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Would you like try again?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again ==&quot;Yes&quot;">
+                    <then>
+                        <output expression="&quot;Lets do this Again!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
